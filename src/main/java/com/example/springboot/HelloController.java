@@ -35,10 +35,4 @@ public class HelloController {
 		String url = "http://eks2-service/eks2/user";
 		return restTemplate.getForObject(url, String.class);
 	}
-
-	public String example() {
-		System.out.println("this is sysout");
-//		return "example";
-        return "";
-    }
 }
