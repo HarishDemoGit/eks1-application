@@ -26,7 +26,7 @@ public class HelloController {
 
 	@GetMapping("/call-eks2")
 	public String callEks2() {
-		String url = "http://eks2-service.default.svc.cluster.local:8086/eks2/user";
+		String url = "http://eks2-service/eks1/user";
 		return restTemplate.getForObject(url, String.class);
 	}
 }
