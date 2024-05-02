@@ -19,6 +19,12 @@ public class HelloController {
 		return "Hello THIS IS EKS1!";
 	}
 
+	@GetMapping("/demo")
+	public String demo() {
+		return "Hello, Demo site";
+	}
+
+
 	@PostMapping("/post")
 	public String index_01(String name) {
 		return "hi EKS";
@@ -26,7 +32,7 @@ public class HelloController {
 
 	@GetMapping("/call-eks2")
 	public String callEks2() {
-		String url = "http://eks2-service/eks1/user";
+		String url = "http://eks2-service/eks2/user";
 		return restTemplate.getForObject(url, String.class);
 	}
 }
