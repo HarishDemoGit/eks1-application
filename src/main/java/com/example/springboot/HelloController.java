@@ -25,10 +25,10 @@ public class HelloController {
 	}
 
 
-	@PostMapping("/post")
-	public String index_01(String name) {
-		return "hi EKS";
-	}
+//	@PostMapping("/post")
+//	public String index_01(String name) {
+//		return "hi EKS";
+//	}
 
 	@GetMapping("/call-eks2")
 	public String callEks2() {
